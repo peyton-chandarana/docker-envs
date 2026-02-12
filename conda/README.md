@@ -10,7 +10,7 @@
 ## Enter the shell via `docker exec` or `docker start`
 
 - `docker start -ai <container_name>`
-- `docker exec -u user -w /home/user -ti  <container_name> /bin/zsh`
+- `docker exec -u user -w /home/user -ti  <container_name>`
 - `docker exec <container_name> <executable>`
 
 Optionally, you can add the `--restart unless-stopped` to the `docker run` command to restart the docker container on docker startup.

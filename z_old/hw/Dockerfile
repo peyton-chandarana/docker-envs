@@ -21,7 +21,7 @@ RUN apt-get install apt-utils \
   libreadline-dev libsqlite3-dev wget curl llvm \
   libncurses5-dev libncursesw5-dev xz-utils tk-dev \
   libffi-dev liblzma-dev usbutils \
-  g++ make unzip zip zsh \
+  g++ make unzip zip \
   dos2unix x11-apps -y
 
 # GUI Applications Setup

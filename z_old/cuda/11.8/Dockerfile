@@ -17,7 +17,7 @@ RUN apt-get upgrade -y
 RUN apt-get install apt-utils \
   sudo vim git wget curl locales ssh htop \
   build-essential usbutils \
-  g++ make unzip zip zsh \
+  g++ make unzip zip \
   dos2unix x11-apps -y
 
 # Set locale
