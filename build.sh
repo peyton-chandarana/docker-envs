@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# UPDATE Passwords for all Dockerfiles
+CURR_YEAR=$(date +%Y)
+PREV_YEAR=$((CURR_YEAR - 1))
+find . -type f -exec \
+    sed -i "s/change-this-${PREV_YEAR}/change-this-${CURR_YEAR}/g" {} +
+
 # Create docker build environment
 echo "### LOG --> INIT build environment..."
 docker buildx create --name ubuntu_envs --use
