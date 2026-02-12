@@ -4,8 +4,8 @@
 
 ## Configuration/Installation
 
-1. Run: `docker pull s7117/ubuntu-base`
-2. Run: `docker run --privileged -v /dev/bus/usb:/dev/bus/usb --name <container_name> --hostname <hostname> -ti s7117/ubuntu-coraltpu`
+1. Run: `docker pull peytonsc/ubuntu-base`
+2. Run: `docker run --privileged -v /dev/bus/usb:/dev/bus/usb --name <container_name> --hostname <hostname> -ti peytonsc/ubuntu-coraltpu`
 
 **_NOTE: Using the `privileged` option may incur certain security implications._**
 
@@ -13,7 +13,7 @@
 
 ```shell
 # Add the --env="DISPLAY" --net=host flags to the docker run command
-docker run --env="DISPLAY" --net=host --privileged -v /dev/bus/usb:/dev/bus/usb --name <container_name> --hostname <hostname> -ti s7117/ubuntu-coraltpu
+docker run --env="DISPLAY" --net=host --privileged -v /dev/bus/usb:/dev/bus/usb --name <container_name> --hostname <hostname> -ti peytonsc/ubuntu-coraltpu
 ```
 
 ## Running an Example:

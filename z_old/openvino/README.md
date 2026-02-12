@@ -4,8 +4,8 @@
 
 ## Configuration/Installation
 
-1. Run: `docker pull s7117/ubuntu_env`
-2. Run: `docker run --name <container_name> --hostname <hostname> -ti s7117/ubuntu_env`
+1. Run: `docker pull peytonsc/ubuntu_env`
+2. Run: `docker run --name <container_name> --hostname <hostname> -ti peytonsc/ubuntu_env`
 
 ## Enter the shell via `docker exec` or `docker start`
 

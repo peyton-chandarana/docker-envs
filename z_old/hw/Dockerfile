@@ -40,7 +40,7 @@ RUN passwd --lock root
 RUN echo 'user:change-this-2025' | chpasswd
 
 # Get the os configs
-RUN su - user -c "git clone https://github.com/s7117/.dotfiles.git /home/user/.dotfiles"
+RUN su - user -c "git clone https://github.com/peytonsc/.dotfiles.git /home/user/.dotfiles"
 
 # Configure VNC
 RUN su - user -c 'mkdir -p ~/.vnc'

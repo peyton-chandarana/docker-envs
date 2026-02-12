@@ -75,7 +75,7 @@ RUN make -j8
 #RUN make install
 
 ########## DOTFILES ##########
-RUN su - user -c  "git clone https://github.com/s7117/.dotfiles.git /home/user/.dotfiles"
+RUN su - user -c  "git clone https://github.com/peytonsc/.dotfiles.git /home/user/.dotfiles"
 
 
 USER user

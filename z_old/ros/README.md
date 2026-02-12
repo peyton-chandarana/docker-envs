@@ -4,8 +4,8 @@
 
 ## Configuration/Installation
 
-1. Run: `docker pull s7117/ubuntu-ros:latest`
-2. Run: `docker run --name ros -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY -it s7117/ubuntu-ros:latest`
+1. Run: `docker pull peytonsc/ubuntu-ros:latest`
+2. Run: `docker run --name ros -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY -it peytonsc/ubuntu-ros:latest`
 
 ## Enter the shell via `docker exec` or `docker start`
 

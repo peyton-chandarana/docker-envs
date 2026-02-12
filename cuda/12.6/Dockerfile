@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.6.3-devel-ubuntu22.04
+FROM nvidia/cuda:12.6.3-cudnn-devel-ubuntu24.04
 
 # ENV
 ENV DEBIAN_FRONTEND=noninteractive
@@ -17,7 +17,7 @@ RUN apt-get upgrade -y
 RUN apt-get install apt-utils \
   sudo vim git wget curl locales ssh htop \
   build-essential usbutils \
-  g++ make unzip zip zsh \
+  g++ make unzip zip \
   dos2unix x11-apps -y
 
 # Set locale
@@ -27,7 +27,7 @@ RUN locale-gen en_US.UTF-8
 RUN adduser user --shell /bin/bash --disabled-password --home /home/user --gecos ""
 RUN usermod -aG sudo user
 RUN passwd --lock root
-RUN echo 'user:change-this-2025' | chpasswd
+RUN echo 'user:change-this-2026' | chpasswd
 
 USER user
 WORKDIR /home/user

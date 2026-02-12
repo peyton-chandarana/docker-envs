@@ -1,4 +1,4 @@
-FROM s7117/ubuntu-base:20.04
+FROM peytonsc/ubuntu-base:20.04
 
 USER root
 

@@ -1,4 +1,4 @@
-FROM s7117/ubuntu-cuda:12.6
+FROM peytonsc/ubuntu-cuda:12.6
 
 USER root
 
@@ -13,10 +13,8 @@ WORKDIR /home/user
 RUN mkdir /home/user/.miniforge3
 RUN wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 RUN chmod 700 ./Miniforge3*.sh
-RUN ./Miniforge3-$(uname)-$(uname -m).sh -b -p /home/user/.miniforge3 -f
+RUN ./Miniforge3-$(uname)-$(uname -m).sh -b -p /home/user/.miniforge3 -f -c
 RUN rm ./Miniforge3*
-RUN /home/user/.miniforge3/bin/conda init bash
-RUN /home/user/.miniforge3/bin/mamba init bash
 
 # Command
 CMD [ "/bin/bash" ]

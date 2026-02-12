@@ -1,7 +1,7 @@
 # Hardware Development Docker Images
 
 ```shell
-docker run -p 5901:5901 --name hwdev --hostname hwdev -d s7117/ubunut-hw:latest
+docker run -p 5901:5901 --name hwdev --hostname hwdev -d peytonsc/ubunut-hw:latest
 ```
 
 Inside the container run:

@@ -1,11 +1,11 @@
 # Ubuntu Conda Docker Development Environment
 
-**_WARNING: A default password has been set for the default user called `user`. The default password is `change-this-2025`. Use `passwd` along with this password to change the default password!_**
+**_WARNING: A default password has been set for the default user called `user`. The default password is `change-this-2026`. Use `passwd` along with this password to change the default password!_**
 
 ## Configuration/Installation
 
-1. Run: `docker pull s7117/ubuntu-base`
-2. Run: `docker run --name <container_name> --hostname <hostname> -ti s7117/ubuntu-base`
+1. Run: `docker pull peytonsc/ubuntu-base`
+2. Run: `docker run --name <container_name> --hostname <hostname> -ti peytonsc/ubuntu-base`
 
 ## Enter the shell via `docker exec` or `docker start`
 
@@ -17,6 +17,6 @@ Optionally, you can add the `--restart unless-stopped` to the `docker run` comma
 
 ## Installing Other Packages:
 
-The user password is `change-this-2025`. It is advised to reset this password as soon as possible upon creating the container.
+The user password is `change-this-2026`. It is advised to reset this password as soon as possible upon creating the container.
 
-Use `passwd` and `change-this-2025` to change the default password to a new password.
+Use `passwd` and `change-this-2026` to change the default password to a new password.

@@ -1,4 +1,4 @@
-FROM s7117/ubuntu-cuda:12.4
+FROM peytonsc/ubuntu-cuda:12.2
 
 USER root
 

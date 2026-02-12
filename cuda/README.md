@@ -1,13 +1,11 @@
 # Ubuntu CUDA Docker Development Environment
 
-**_WARNING: A default password has been set for the default user called `user`. The default password is `change-this-2025`. Use `passwd` along with this password to change the default password!_**
+**_WARNING: A default password has been set for the default user called `user`. The default password is `change-this-2026`. Use `passwd` along with this password to change the default password!_**
 
 ## CUDA Version Tags
 
-- `11.8.0` = s7117/ubuntu-cuda:11.8
-- `12.2.2` = s7117/ubuntu-cuda:12.2
-- `12.4.1` = s7117/ubuntu-cuda:12.4
-- `12.6.3` = s7117/ubuntu-cuda:12.6
+- `12.6.3` = peytonsc/ubuntu-cuda:12.6
+- `12.8.1` = peytonsc/ubuntu-cuda:12.8
 
 ## GPU Access Prerequisite: nvidia-container-toolkit
 
@@ -15,8 +13,8 @@
 
 ## Configuration/Installation
 
-1. Run: `docker pull s7117/ubuntu-cuda:<cudaversion>`
-2. Run: `docker run --gpus all --name <container_name> --hostname <hostname> -ti s7117/ubuntu-cuda:<cudaversion>`
+1. Run: `docker pull peytonsc/ubuntu-cuda:<cudaversion>`
+2. Run: `docker run --gpus all --name <container_name> --hostname <hostname> -ti peytonsc/ubuntu-cuda:<cudaversion>`
 
 ## Enter the shell via `docker exec` or `docker start`
 
@@ -28,6 +26,6 @@ Optionally, you can add the `--restart unless-stopped` to the `docker run` comma
 
 ## Installing Other Packages:
 
-The user password is `change-this-2025`. It is advised to reset this password as soon as possible upon creating the container.
+The user password is `change-this-2026`. It is advised to reset this password as soon as possible upon creating the container.
 
-Use `passwd` and `change-this-2025` to change the default password to a new password.
+Use `passwd` and `change-this-2026` to change the default password to a new password.
