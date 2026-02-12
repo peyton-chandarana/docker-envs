@@ -20,8 +20,6 @@ docker buildx build -f ./base/20.04/Dockerfile --no-cache \
                         --tag peytonsc/ubuntu-base:24.04
 echo "### LOG --> Base images built..."
 echo "### LOG --> Pushing images..."
-# docker push peytonsc/ubuntu-base:22.04
-# docker push peytonsc/ubuntu-base:24.04
 
 # Miniforge3
 docker buildx build -f ./conda/Dockerfile --no-cache \
@@ -29,7 +27,6 @@ docker buildx build -f ./conda/Dockerfile --no-cache \
                         --tag peytonsc/ubuntu-conda:latest
 echo "### LOG --> Conda images built..."
 echo "### LOG --> Pushing images..."
-# docker push peytonsc/ubuntu-conda:latest
 
 # CUDA
 echo "### LOG --> BUILDING CUDA IMAGES..."
@@ -41,8 +38,7 @@ docker buildx build -f ./cuda/12.8/Dockerfile --no-cache \
                         --tag peytonsc/ubuntu-cuda:12.8
 echo "### LOG --> CUDA images built..."
 echo "### LOG --> Pushing images..."
-# docker push peytonsc/ubuntu-cuda:12.6
-# docker push peytonsc/ubuntu-cuda:12.8
+
 
 # CUDA Conda
 echo "### LOG --> BUILDING GPU CONDA IMAGES..."
@@ -54,5 +50,12 @@ docker buildx build -f ./cuda-conda/12.8/Dockerfile --no-cache \
                         --tag peytonsc/ubuntu-cuda-conda:12.8
 echo "### LOG --> CUDA-CONDA images built..."
 echo "### LOG --> Pushing images..."
-# docker push peytonsc/ubuntu-cuda-conda:12.4
-# docker push peytonsc/ubuntu-cuda-conda:12.8
+
+# Push all images to Docker Hub
+docker push peytonsc/ubuntu-base:22.04
+docker push peytonsc/ubuntu-base:24.04
+docker push peytonsc/ubuntu-conda:latest
+docker push peytonsc/ubuntu-cuda:12.6
+docker push peytonsc/ubuntu-cuda:12.8
+docker push peytonsc/ubuntu-cuda-conda:12.6
+docker push peytonsc/ubuntu-cuda-conda:12.8
