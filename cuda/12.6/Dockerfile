@@ -24,10 +24,10 @@ RUN apt-get install apt-utils \
 RUN locale-gen en_US.UTF-8
 
 # Create a new user
-RUN adduser user --shell /bin/bash --disabled-password --home /home/user --gecos ""
+RUN useradd -m -s /bin/bash user
+RUN echo 'user:change-this-2026' | chpasswd
 RUN usermod -aG sudo user
 RUN passwd --lock root
-RUN echo 'user:change-this-2026' | chpasswd
 
 USER user
 WORKDIR /home/user
